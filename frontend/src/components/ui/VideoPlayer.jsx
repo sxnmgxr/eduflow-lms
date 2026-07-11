@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Hls from 'hls.js';
 import { Play, Pause, Volume2, VolumeX, Maximize, Settings } from 'lucide-react';
-
 export default function VideoPlayer({ src, onProgress, onComplete, poster }) {
   const videoRef = useRef(null);
   const hlsRef = useRef(null);
